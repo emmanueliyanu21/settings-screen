@@ -4,20 +4,20 @@ import TabMenu from "../../components/TabMenu";
 const Settings = () => {
 
   const settingsData = [
-    { title: "My details", content: <div>My Details</div>},
-    { title: "Profile", content: <div>Profile</div> },
-    { title: "Password", content: <div>Password</div>},
-    { title: "Team", content: <div>Team</div>},
-    { title: "Plan", content: <div>Plan</div>},
+    { title: "My details", },
+    { title: "Profile",  },
+    { title: "Password",},
+    { title: "Team", },
+    { title: "Plan", },
     { title: "Billing", content: <Billing/>},
-    { title: "Notification", content: <div>Notification</div>},
-    { title: "Integration", content: <div>Integration</div>},
-    { title: "API", content: <div>API</div>}, 
+    { title: "Notification", },
+    { title: "Integration", },
+    { title: "API", }, 
   ];
 
   return (
     <>
-      <div className="wrapper h-screen bgcolor bg-white pt-8 pb-12 px-8 bg-light-gray">
+      <div className="wrapper  bgcolor bg-white pt-8 pb-12 px-8 bg-light-gray">
         <div className="header">
           <h2 className="text-text-color font-inter font-medium text-3xl pb-1 not-italic">
             Settings
