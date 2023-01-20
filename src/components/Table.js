@@ -110,7 +110,7 @@ function Table() {
                 <th scope="col" className="px-6 py-3 ">
                   Status
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 whitespace-nowrap">
                   Users on plan
                 </th>
                 <th scope="col" className="px-6 py-3">
@@ -143,8 +143,8 @@ function Table() {
                     >
                       {item.productName}
                     </th>
-                    <td className="px-6 py-4 text-deep-grey font-inter font-medium">USD ${item.amount}.00</td>
-                    <td className="px-6 py-4 text-deep-grey font-inter font-medium">{item.date}</td>
+                    <td className="px-6 py-4 text-deep-grey font-inter font-medium whitespace-nowrap">USD ${item.amount}.00</td>
+                    <td className="px-6 py-4 text-deep-grey font-inter font-medium whitespace-nowrap">{item.date}</td>
                     <td className="px-6 py-4 green ">
                       <span className="bg-[#ECFDF3] flex items-center w-20 h-7 font-medium font-inter p-2 text-[#027A48] rounded-full">
                       <Icon icon="material-symbols:check-small-rounded" width="24" height="24" />
