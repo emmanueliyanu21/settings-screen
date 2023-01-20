@@ -18,6 +18,10 @@
   .MailDetails {
     padding-top: 20px;
   }
+  .mail-details{
+    width: 100%;
+    /* max-width: 300px; */
+  }
   .card {
     margin-top: 20px;
   }
