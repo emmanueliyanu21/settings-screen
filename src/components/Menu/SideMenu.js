@@ -16,12 +16,6 @@ import MobileNav from '../../assets/icons/nav.png'
 import { Icon } from "@iconify/react";
 
 function SideMenu() {
-const defaultKey = 7
-
-const [activeKey, setActiveKey] = useState(defaultKey)
-const handleTabChange = (key) => {
-    setActiveKey(key)
-}
 
   const data = [
     { imgName: Home, linkName: "Home", url: "home" },
@@ -53,18 +47,7 @@ const handleTabChange = (key) => {
           />
         </div>
         <div className="sidemenu pl-3 pb-4">
-          <ul>
-            {data.map((item, i) => (
-              <Menu
-                key={i}
-                imgName={item.imgName}
-                url={item.url}
-                linkName={item.linkName}
-                number={item.number}
-                onSelect={()=> handleTabChange(i)} tabIndex = {i} activeKey={activeKey}
-              />
-            ))}
-          </ul>
+          <Menu items={data} />
         </div>
         <div className="new-feature w-64 rounded-lg ml-2 mb-10 p-5 bg-[#F9FAFB]">
           <h2 className="text-color font-inter pb-2.5 leading-5 text-sm font-medium not-italic">

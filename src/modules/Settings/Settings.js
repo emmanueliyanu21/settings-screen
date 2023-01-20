@@ -17,7 +17,7 @@ const Settings = () => {
 
   return (
     <>
-      <div className="wrapper min-h-screen bgcolor bg-white pt-8 pb-12 px-8 bg-light-gray">
+      <div className="wrapper min-h-screen bgcolor bg-white pt-8 pb-12 px-8 bg-light-gray max-w-5xl">
         <div className="header">
           <h2 className="text-text-color font-inter font-medium text-3xl pb-1 not-italic">
             Settings

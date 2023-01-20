@@ -77,9 +77,6 @@ function Billing() {
                     height="28"
                   />
                   <input className="text-color font-inter leading-6 text-base font-normal not-italic" placeholder="billing@untitledui.com" />
-                  {/* <span >
-                    
-                  </span> */}
                 </div>
               </div>
             </div>
