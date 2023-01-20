@@ -7,9 +7,7 @@ const [activeKey, setActiveKey] = useState(defaultKey)
 
 
 const handleTabChange = (key) => {
-    if(tabs[key].content){
-        setActiveKey(key)
-    }
+    setActiveKey(key)
 }
 
   return (
@@ -23,7 +21,7 @@ const handleTabChange = (key) => {
             </div>
           </div>
         </div>
-        {tabs[activeKey].content}
+        {tabs[activeKey]?.content || <div></div> }
     </>
   );
 }

@@ -4,7 +4,7 @@ import SideMenu from "../../components/SideMenu";
 
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-[22%_90%] container  grid">
+    <div className="grid grid-cols-[22%_90%] container grid">
       <SideMenu />
       <Settings />
     </div>
