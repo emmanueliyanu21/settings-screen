@@ -122,7 +122,7 @@ function Table() {
               data.map((item, index) => (
                 <tbody key={index}>
                   <tr
-                    className="bg-white hover:cursor-pointer border-b border-[#EAECF0] text-sm white hover:bg-gray-50 dark:hover:bg-bgcolor"
+                    className="bg-white hover:cursor-pointer border-b border-[#EAECF0] text-sm white "
                     
                   >
                     <td className="w-4 p-4">
@@ -139,21 +139,21 @@ function Table() {
                     </td>
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-sm text-text-color whitespace-nowrap"
+                      className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4 font-medium text-sm text-text-color whitespace-nowrap"
                     >
                       {item.productName}
                     </th>
-                    <td className="px-6 py-4 text-deep-grey font-inter font-medium whitespace-nowrap">USD ${item.amount}.00</td>
-                    <td className="px-6 py-4 text-deep-grey font-inter font-medium whitespace-nowrap">{item.date}</td>
-                    <td className="px-6 py-4 green ">
+                    <td className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4 text-deep-grey font-inter font-medium whitespace-nowrap">USD ${item.amount}.00</td>
+                    <td className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4 text-deep-grey font-inter font-medium whitespace-nowrap">{item.date}</td>
+                    <td className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4 green ">
                       <span className="bg-[#ECFDF3] flex items-center w-20 h-7 font-medium font-inter p-2 text-[#027A48] rounded-full">
                       <Icon icon="material-symbols:check-small-rounded" width="24" height="24" />
                         {item.status}</span>
                       </td>
-                    <td className="px-6 py-4">
+                    <td className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4">
                       <img src={item.users} alt="" />
                       </td>
-                    <td className="px-6 py-4 text-right">
+                    <td className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4 text-right">
                       <img width={16} height={16} src={Download} alt="" />
                     </td>
                   </tr>
