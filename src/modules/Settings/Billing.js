@@ -102,7 +102,7 @@ function Billing() {
             <div className="mt-2.5 gap-2 flex items-center">
               <Icon
                 icon="material-symbols:add"
-                className="pr-1 text-dark-grey"
+                className="hover:cursor-pointer pr-1 text-dark-grey"
                 width="28"
                 height="28"
               />

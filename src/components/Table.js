@@ -2,14 +2,14 @@ import React from "react";
 import Download from "./../assets/icons/download-cloud.svg";
 import { Icon } from '@iconify/react';
 
-import UserImage from '../assets/avatar/avatargroup.png'
-import UserImage1 from '../assets/avatar/avatargroup1.png'
-import UserImage2 from '../assets/avatar/avatargroup2.png'
-import UserImage3 from '../assets/avatar/avatargroup3.png'
-import UserImage4 from '../assets/avatar/avatargroup4.png'
-import UserImage5 from '../assets/avatar/avatargroup5.png'
-import UserImage6 from '../assets/avatar/avatargroup6.png'
-import UserImage7 from '../assets/avatar/avatargroup3.png'
+import UserImage from '../assets/avatar/Avatars6.svg'
+import UserImage1 from '../assets/avatar/Avatars5.svg'
+import UserImage2 from '../assets/avatar/Avatars2.svg'
+import UserImage3 from '../assets/avatar/Avatars3.svg'
+import UserImage4 from '../assets/avatar/Avatars4.svg'
+import UserImage5 from '../assets/avatar/Avatars.svg'
+import UserImage6 from '../assets/avatar/Avatars1.svg'
+import UserImage7 from '../assets/avatar/Avatars3.svg'
 
 function Table() {
   const data = [
