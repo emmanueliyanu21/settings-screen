@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
+  background-color: #f9fafb;
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

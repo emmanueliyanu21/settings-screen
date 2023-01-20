@@ -16,7 +16,9 @@ module.exports = {
       'header-text': '#344054',
       'purple-color': '#6941c6',
       'light-purple-color': '#b29de2',
-      'green': '#ECFDF3'
+      'green': '#ECFDF3',
+      'primary': '#7F56D9',
+      'blur-white': 'rgba(255, 255, 255, 0.8)'
   },
   fontFamily: {
     'inter': ['Inter'],

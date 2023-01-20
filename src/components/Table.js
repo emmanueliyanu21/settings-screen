@@ -81,7 +81,7 @@ function Table() {
 
   return (
     <div >
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-6xl mx-auto tableD">
         <div className="relative overflow-x-auto border border-[#EAECF0] shadow-3xl sm:rounded-lg">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-deep-grey font-inter border-b border-[#EAECF0] font-medium bg-gray-50 transparent dark:text-gray-400">

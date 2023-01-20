@@ -5,8 +5,19 @@
   .container {
     grid-template-columns: 100%;
   }
-  .this::-webkit-scrollbar {
+  .tab::-webkit-scrollbar {
     display: none !important;
+  }
+}
+@media only screen and (min-width: 1600px ) and (max-width: 2600px){
+  .wrapper {
+    width: 1600px;
+  }
+  .tableD {
+    max-width: 1250px;
+  }
+  .body-content {
+    width: 1250px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -24,6 +35,9 @@
   .card {
     margin-top: 20px;
     width: 100%;
+  }
+  .mobile {
+    display: block;
   }
 }
 
