@@ -1,5 +1,5 @@
 import React from "react";
-import Download from "./../assets/icons/download-cloud.png";
+import Download from "./../assets/icons/download-cloud.svg";
 import { Icon } from '@iconify/react';
 
 import UserImage from '../assets/avatar/avatargroup.png'
@@ -154,7 +154,7 @@ function Table() {
                       <img src={item.users} alt="" />
                       </td>
                     <td className="hover:bg-gray-50 dark:hover:bg-bgcolor px-6 py-4 text-right">
-                      <img width={16} height={16} src={Download} alt="" />
+                      <img src={Download} alt="" />
                     </td>
                   </tr>
                 </tbody>

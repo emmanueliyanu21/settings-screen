@@ -1,4 +1,4 @@
-import Download from "./../../assets/icons/download-cloud.png";
+import Download from "./../../assets/icons/download-cloud.svg";
 
 import Table from "../../components/Table";
 
@@ -118,7 +118,7 @@ function Billing() {
               Billing history
             </h2>
             <button className="shadow-3xl border border-[#d0d5dd] px-4 py-2 rounded flex items-center gap-2">
-              <img width={16} height={16} src={Download} alt="" />
+              <img  src={Download} alt="" />
               <span className="text-header-text font-inter font-medium text-sm not-italic">Download all</span>
             </button>
           </div>
