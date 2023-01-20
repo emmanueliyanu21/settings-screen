@@ -1,18 +1,18 @@
-import Tab from "../../components/Tab";
 import Billing from "./Billing";
+import TabMenu from "../../components/TabMenu";
 
 const Settings = () => {
 
   const settingsData = [
-    { title: "My details", url: '/my-details' },
-    { title: "Profile", url: '/profile' },
-    { title: "Password", url: 'password'},
-    { title: "Team", url: 'team'},
-    { title: "Plan", url: 'plan'},
-    { title: "Billing", url: 'billing', status: 'isActive'},
-    { title: "Notification", url: 'notification'},
-    { title: "Integration", url: 'integration'},
-    { title: "API", url: 'api'}, 
+    { title: "My details"},
+    { title: "Profile" },
+    { title: "Password"},
+    { title: "Team"},
+    { title: "Plan"},
+    { title: "Billing", content: <Billing/>},
+    { title: "Notification"},
+    { title: "Integration"},
+    { title: "API"}, 
   ];
 
   return (
@@ -26,17 +26,7 @@ const Settings = () => {
             Manage your team and preferences here.
           </p>
         </div>
-        <div className="overflow-x-auto tab">
-          <div className="nav max-w-5xl mt-2.5 mb-10">
-            <div className="w-[1000px]">
-              {settingsData.map((item, i) => (
-                <Tab key={i} url={item.url} title={item.title} status={item.status} />
-              ))}
-            </div>
-          </div>
-        </div>
-        
-        <Billing />
+        <TabMenu tabs={settingsData} defaultKey = {5} />
       </div>
     </>
   );
