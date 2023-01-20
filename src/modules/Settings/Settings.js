@@ -1,5 +1,5 @@
 import Billing from "./Billing";
-import TabMenu from "../../components/TabMenu";
+import TabMenu from "../../components/TabMenu/TabMenu";
 
 const Settings = () => {
 

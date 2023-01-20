@@ -1,6 +1,6 @@
 import { Settings } from "../Settings/index";
 
-import SideMenu from "../../components/SideMenu";
+import SideMenu from "../../components/Menu/SideMenu";
 
 const Dashboard = () => {
   return (

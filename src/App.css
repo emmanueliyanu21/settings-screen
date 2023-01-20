@@ -31,7 +31,8 @@
     padding-top: 20px;
   }
   .mail-details{
-    width: 100%;
+    width: 300px;
+    max-width: 100%;
   }
   .card {
     margin-top: 20px;

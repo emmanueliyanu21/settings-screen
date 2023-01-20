@@ -1,20 +1,28 @@
-import Home from "./../assets/icons/home.png";
-import Dashboard from "./../assets/icons/bar-chart-2.png";
-import Project from "./../assets/icons/3-layers.png";
-import Task from "./../assets/icons/check-square.png";
-import Reporting from "./../assets/icons/flag.png";
-import Users from "./../assets/icons/users.png";
-import Support from "./../assets/icons/life-buoy.png";
-import Setting from "./../assets/icons/settings.png";
-import Customer from "./../Image.png";
-import Avatar from "./../assets/Avatar.png";
-import LogoutButton from "./../assets/Icon.png";
-import Logo from "./../Logomark.png";
+import { useState } from "react";
+import Home from "./../../assets/icons/home.png";
+import Dashboard from "./../../assets/icons/bar-chart-2.png";
+import Project from "./../../assets/icons/3-layers.png";
+import Task from "./../../assets/icons/check-square.png";
+import Reporting from "./../../assets/icons/flag.png";
+import Users from "./../../assets/icons/users.png";
+import Support from "./../../assets/icons/life-buoy.png";
+import Setting from "./../../assets/icons/settings.png";
+import Customer from "./../../Image.png";
+import Avatar from "./../../assets/Avatar.png";
+import LogoutButton from "./../../assets/Icon.png";
+import Logo from "./../../Logomark.png";
 import Menu from "./Menu";
-import MobileNav from '../assets/icons/nav.png'
+import MobileNav from '../../assets/icons/nav.png'
 import { Icon } from "@iconify/react";
 
 function SideMenu() {
+const defaultKey = 7
+
+const [activeKey, setActiveKey] = useState(defaultKey)
+const handleTabChange = (key) => {
+    setActiveKey(key)
+}
+
   const data = [
     { imgName: Home, linkName: "Home", url: "home" },
     { imgName: Dashboard, linkName: "Dashboard", number: 10, url: "dashboard" },
@@ -44,7 +52,7 @@ function SideMenu() {
             placeholder="Search"
           />
         </div>
-        <div className="sidemenu pl-3">
+        <div className="sidemenu pl-3 pb-4">
           <ul>
             {data.map((item, i) => (
               <Menu
@@ -53,6 +61,7 @@ function SideMenu() {
                 url={item.url}
                 linkName={item.linkName}
                 number={item.number}
+                onSelect={()=> handleTabChange(i)} tabIndex = {i} activeKey={activeKey}
               />
             ))}
           </ul>
@@ -112,7 +121,6 @@ function SideMenu() {
       </div>
       </div>
     </>
-    
   );
 }
 
